@@ -25,6 +25,7 @@ namespace Question_1_4
                 if (charNumber!=-1)
                 {
                     frequencyTable[charNumber]++;
+                    //this will cause odd count to below 0 if there is no replicated number which is no palindrome
                     if (frequencyTable[charNumber] % 2 == 1)
                         oddCount++;
                     else
